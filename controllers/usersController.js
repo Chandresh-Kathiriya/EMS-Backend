@@ -4,7 +4,7 @@
 const User = require('../models/User');
 const Role = require('../models/Role');
 const PermissionSchema = require('../models/PermissionSchema');
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 const { Op } = require('sequelize');
 const WeekOff = require('../models/WeekOff');
 

@@ -1,7 +1,7 @@
 // controllers/leaveController.js
 const nodemailer = require('nodemailer');
 const crypto = require('crypto');
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 
 // import require core module and models
 const Leave = require('../models/Leave');

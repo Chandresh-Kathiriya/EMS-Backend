@@ -1,7 +1,7 @@
 // controllers/profileController.js
 
 // import require core module and models
-const bcrypt = require('bcrypt')
+const bcrypt = require('bcryptjs')
 const User = require('../models/User');
 const Role = require('../models/Role');
 
