@@ -5,7 +5,7 @@ function verifyToken(req, res, next) {
 
   // console.log(token)
 
-  if (!token) return res.status(401).json({ message: 'Unauthorized - please log in' });
+  // if (!token) return res.status(401).json({ message: 'Unauthorized - please log in' });
 
   try {
     const decoded = jwt.verify(token, process.env.JWT_SECRET);
