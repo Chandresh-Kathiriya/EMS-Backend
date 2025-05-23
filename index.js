@@ -28,7 +28,8 @@ const PORT = process.env.PORT;
 // }));
 
 app.use(cors({
-  origin: '*'
+  origin: 'https://celebrated-conkies-f5f1a1.netlify.app',
+  credentials: true
 }));
 
 app.use(express.json());
