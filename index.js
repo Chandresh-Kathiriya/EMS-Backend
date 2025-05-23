@@ -28,6 +28,11 @@ const PORT = process.env.PORT;
 // }));
 
 app.use(cors({
+  origin: 'https://celebrated-conkies-f5f1a1.netlify.app', // ✅ your Netlify domain
+  credentials: true // ✅ allow credentials
+}));
+
+app.options('*', cors({ // ✅ allow preflight
   origin: 'https://celebrated-conkies-f5f1a1.netlify.app',
   credentials: true
 }));
