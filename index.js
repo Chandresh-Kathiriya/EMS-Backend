@@ -28,7 +28,7 @@ const PORT = process.env.PORT;
 // }));
 
 app.use(cors({
-  origin: 'https://celebrated-conkies-f5f1a1.netlify.app', // ✔ exact frontend URL
+  origin: 'https://ems-project-chandresh.netlify.app', // ✔ exact frontend URL
   credentials: true
 }));
 
