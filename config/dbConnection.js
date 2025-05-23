@@ -6,7 +6,7 @@ const sequelize = new Sequelize(
   process.env.DB_USERNAME,
   '',  // empty string if password is null
   {
-    timezone: 'Asia/Kolkata',
+    timezone: '+05:30',
     host: process.env.DB_HOST,
     dialect: 'mysql',
     port: process.env.DB_PORT || 3306,
