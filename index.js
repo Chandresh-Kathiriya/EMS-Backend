@@ -27,15 +27,14 @@ const PORT = process.env.PORT;
 //   credentials: true
 // }));
 
-app.use((req, res, next) => {
-  res.header("Access-Control-Allow-Origin", "https://celebrated-conkies-f5f1a1.netlify.app");
-  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-  next();
-});
-
+  app.use(cors({
+    origin: '*',
+    credentials: true
+  }));
+  
 
 app.options('*', cors({ // ✅ allow preflight
-  origin: 'https://celebrated-conkies-f5f1a1.netlify.app/',
+  origin: 'https://celebrated-conkies-f5f1a1.netlify.app',
   credentials: true
 }));
 
