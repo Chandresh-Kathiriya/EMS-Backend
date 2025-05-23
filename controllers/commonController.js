@@ -63,7 +63,7 @@ exports.loginData = async (req, res) => {
     }
   } catch (error) {
     console.error('Error during login:' + error);
-    return res.json({ message: 'Error occurred during login', error: error.message }); // 500 Internal Server Error for unexpected issues
+    return res.json({ message: `Error occurred during login + ${error.message}`, error: error.message }); // 500 Internal Server Error for unexpected issues
   }
 };
 
