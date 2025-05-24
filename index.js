@@ -22,15 +22,15 @@ const { runCronWithRetry } = require('./controllers/cronJob');
 const app = express();
 const PORT = process.env.PORT;
 
-// app.use(cors({
-//   origin: ['http://localhost:3000', 'http://192.168.1.4:3000'],
-//   credentials: true
-// }));
-
 app.use(cors({
-  origin: 'https://ems-project-chandresh.netlify.app', // ✔ exact frontend URL
+  origin: ['http://localhost:3000'],
   credentials: true
 }));
+
+// app.use(cors({
+//   origin: 'https://ems-project-chandresh.netlify.app', // ✔ exact frontend URL
+//   credentials: true
+// }));
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
