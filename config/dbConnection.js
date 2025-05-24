@@ -12,7 +12,7 @@ const sequelize = new Sequelize(
     {
         timezone: '+05:30',
         host: process.env.DB_HOST,
-        dialect: 'mysql',
+        // dialect: 'mysql',
         port: process.env.DB_PORT || 3306,
     }
 );
